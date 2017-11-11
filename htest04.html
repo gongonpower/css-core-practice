@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body, div{
+            margin: 0;
+            padding: 0;
+        }
+        .box1, .box2 {
+            position: relative;
+            left: 150px;
+            top: 150px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #dedede;
+        }
+        .box1 .item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        .box2 .item {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="item">absolute</div>
+    </div>
+    <div class="box2">
+        <div class="item">fixed</div>
+    </div>
+    
+</body>
+</html>
