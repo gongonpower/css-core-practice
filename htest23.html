@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            float: left;
+            background: url(beach.jpeg);
+            padding: 20px;
+            margin-right: 10px;
+            border: 20px dotted pink;
+
+        }
+        div:nth-of-type(2){
+            background-origin: border-box;
+        }
+        div:nth-of-type(3){
+            background-origin: padding-box;
+        }
+        div:nth-of-type(4){
+            background-origin: content-box;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div>default</div>
+    <div>border</div>
+    <div>padding</div>
+    <div>content data</div>
+    
+</body>
+</html>
